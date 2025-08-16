@@ -1,0 +1,138 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+#bg0 {
+  background: url("backgrounds/bg0.jpg") no-repeat center center;
+  background-size: cover;   /* makes it fit horizontally */
+  height: 100vh;            /* full viewport height */
+  width: 100%;    
+  animation: bump 1.5s ease-in-out 2;          
+  animation-delay: 3.5s;
+  position: relative;
+}
+
+@keyframes bump {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px); /* how much it bumps upward */
+  }
+}
+
+.overlay-text1 {
+  position: absolute;
+  top: 22%;              
+  left: 22%;              
+  transform: translate(-50%, -50%);
+  color: rgb(66, 61, 61);
+  text-align: left;
+  font-family: 'Satisfy', cursive;
+}
+
+.overlay-text1 h1,
+.overlay-text1 p {
+  margin: 0;   /* removes unwanted white space */
+}
+
+.overlay-text1 h1 {
+  font-size: 35px; 
+}
+
+.overlay-text1 p {
+  font-size: 28px; 
+}
+
+.bg1 {
+  background: url("backgrounds/bg1.jpg") no-repeat center center;
+  background-size: cover;
+  height: 100vh;   /* full screen height */
+  width: 100%;     /* full width */
+  position: relative;
+}
+
+#abt-me, #abt-me-text {
+  position: absolute;   
+  transform: translate(-50%, -50%);
+  color: rgb(66, 61, 61);
+  text-align: left;
+  width : 65%;
+  max-width: 700px;
+  min-width: 250px;
+  box-sizing: border-box;
+  font-family: 'Radley', serif;
+  display: block;
+  white-space: normal;
+  margin: 0;
+}
+
+
+#abt-me {
+  top: 13%;              
+  left: 65%;           
+  font-size: 30px; 
+}
+
+#abt-me-text {
+  top: 35%;              
+  left: 65%;           
+  font-size: 20px; 
+}
+
+#me1 {
+  position: absolute;
+  top: 12%;
+  right : 659px;
+  transform: translateX(-50%);
+  width: 250px;
+  z-index: 1;
+  border-radius: 12px;
+}
+
+#links, #links-text {
+    margin : 0;
+    font-family: 'Radley', serif;
+    color: rgb(66, 61, 61);
+    text-align: left;
+}
+
+#links {
+   position : absolute;
+   top : 62%;
+   left : 6%; 
+   font-size: 30px;
+}
+
+#links-text {
+   position : absolute;
+   top : 66%;
+   left : 14px; 
+   font-size: 16px;
+}
+
+ul {
+  list-style-type: none;  /* remove default */
+}
+ul li::before {
+  content: "🍓";
+}
+
+#footer {
+  position: fixed;          /* stick to bottom of screen */
+  bottom: 0;
+  left: 0;
+  width: 100%;              /* full width */
+  background: rgba(0, 0, 0, 0.6); /* black with 60% opacity */
+  color: white;             /* text color */
+  text-align: center;       /* center the text */
+  padding: 2px 0;          /* vertical padding */
+  font-family: 'Radley', serif;
+  font-size: 18px;
+  z-index: 999;
+  font-family: 'Satisfy', cursive;
+}
