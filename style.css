@@ -87,7 +87,11 @@ html, body {
 #me1 {
   position: absolute;
   top: 12%;
+<<<<<<< HEAD
   right : 750px;
+=======
+  right : 659px;
+>>>>>>> c029c66aabf5f0ccad85e99346d522e846ee4dba
   transform: translateX(-50%);
   width: 250px;
   z-index: 1;
@@ -127,10 +131,17 @@ ul li::before {
   bottom: 0;
   left: 0;
   width: 100%;              /* full width */
+<<<<<<< HEAD
   background: rgba(0, 0, 0, 0.5); /* black with 60% opacity */
   color: white;             /* text color */
   text-align: center;       /* center the text */
   padding: 0.5px 0;          /* vertical padding */
+=======
+  background: rgba(0, 0, 0, 0.6); /* black with 60% opacity */
+  color: white;             /* text color */
+  text-align: center;       /* center the text */
+  padding: 2px 0;          /* vertical padding */
+>>>>>>> c029c66aabf5f0ccad85e99346d522e846ee4dba
   font-family: 'Radley', serif;
   font-size: 18px;
   z-index: 999;
